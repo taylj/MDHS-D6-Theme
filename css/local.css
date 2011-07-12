@@ -1,0 +1,777 @@
+/* $Id: local-sample.css,v 1.1.2.1 2010/01/11 00:08:12 sociotech Exp $ */
+
+/****************************/
+/* LOCAL CSS                */
+/****************************/
+
+/* Put your custom CSS and CSS overrides in this file and  */
+/* rename it local.css.  By restricting your CSS changes   */
+/* to local.css, your changes will not be overwritten when */
+/* upgrading to a new version of this theme.  You can also */
+/* use a local-rtl.css file for the equivalent in RTL.     */
+
+/* Steps to activate local.css:                       */
+/* 1. Add your custom CSS to this file                */
+/* 2. Rename this file to local.css                   */
+/* 3. Clear cached data at admin/settings/performance */
+
+body {
+  font-family: "Trebuchet MS", Arial, sans-serif;
+}
+
+#header-group-inner {
+  padding: 8px 0 9px;
+}
+
+#header-site-info {
+  margin-bottom: 0;
+}
+
+.search-box-inner label {
+  font-weight: bold;
+  color: #fff;
+}
+
+#site-name-wrapper {
+  margin-top: 26px;
+}
+
+#main {
+  background-color: #fff;
+  padding: 1.5em 0;
+}
+
+.front #main {
+  padding: 0; /* Remove padding on front page */
+}
+
+.block .inner {
+  margin-left: 1.5em; /* Might destroy width of sidebars */
+  margin-right: 1.5em;
+}
+
+#content-content .inner {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.postscript-bottom, .footer, .footer-message {
+  font-size: 90% !important; /* Override setting from typography.css */
+}
+
+.postscript-bottom h2.block-title {
+  font-size: 115%;
+  font-weight: bold;
+  color: #fff;
+  padding-bottom: 0 !important;
+}
+
+/* postscript-bottom links */
+.postscript-bottom a,
+.postscript-bottom a:link,
+.postscript-bottom a:visited {
+  color: #333;
+  text-decoration: none;
+  font-weight: normal;
+}
+
+.postscript-bottom a:hover,
+.postscript-bottom a:focus,
+.postscript-bottom a:active {
+  text-decoration: underline;
+}
+
+.postscript-bottom li, .postscript-bottom li.leaf, .postscript-bottom ul.menu li, .postscript-bottom .item-list ul li {
+  list-style-image: none;
+  list-style-type: disc;
+  color: #fff;
+}
+
+.separator /* Seperator in the footer */ {
+  width: 920px;
+  padding: 20px;
+  background: #999;
+  margin: auto;
+}
+
+.separator hr {
+  border-color: #ffffff;
+  margin-top: 0;
+  margin-bottom: 0;
+  border-width: 1px 0 0;
+}
+
+.center-images-inner .block .inner {
+  margin-left: 0; /* Remove margins set by .block .inner */
+  margin-right: 0;
+}
+
+.center-images-inner .block {
+  margin-bottom: 0; /* Remove margins set by .block */
+}
+
+.center-images-inner a img,
+.view-front-slideshow a img {
+  vertical-align: bottom;
+}
+
+.center-images-inner .views-slideshow-controls-top,
+.view-front-slideshow .views-slideshow-controls-top {
+  padding: 6px;
+  background-color: #eee;
+  text-align: right;
+}
+
+.center-images-inner .views-slideshow-controls-top,
+.view-front-slideshow .views-slideshow-controls-top {
+  padding: 6px;
+  background-color: transparent;
+  position: absolute;
+  right: 0;
+  z-index: 10;
+  bottom: 2px;
+}
+
+.view-front-slideshow .views-slideshow-controls-top {
+  bottom: 10px;
+}
+
+.center-images-inner .views-slideshow-controls-top .pager-item.activeSlide a,
+.view-front-slideshow .views-slideshow-controls-top .pager-item.activeSlide a {
+  background-color: #fff;
+}
+
+.center-images-inner .views-slideshow-controls-top .pager-item a,
+.view-front-slideshow .views-slideshow-controls-top .pager-item a {
+  text-decoration: none;
+  font-size: 11px;
+  padding: 2px 6px;
+  border: 1px solid #fff;
+  margin-left: 10px;
+  display: block;
+  width: 12px;
+  text-align: center;
+  float: left;
+  background-color: #ccc;
+}
+
+.center-images-inner .views-slideshow-controls-top .pager-item a:hover,
+.view-front-slideshow .views-slideshow-controls-top .pager-item a:hover {
+  border-color: #cc0000;
+  background-color: #fff;
+}
+
+.view-news .views-row,
+.view-latest-spotlight .views-row {
+  width: 100%;
+  overflow: hidden;
+}
+
+/* Superfish styles */
+ul.sf-menu ul {
+  top: 2.5em;
+}
+
+#pid-news #view-id-latest_news-page_1 tr td {
+  margin: 0;
+  padding: 1em;
+}
+#search-box {
+  width: 230px;
+}
+#block-menu-menu-header-top-submenu,
+#secondary-menu {
+  float: right;
+  width: auto;
+  clear: right;
+  margin-right: 5px !important;
+}
+#block-menu-menu-header-top-submenu a,
+#secondary-menu a {
+  color: #ffffff;
+  text-decoration: none;
+  display: inline-block;
+  padding: 0 5px;
+  border-right: 1px solid #ffffff;
+  line-height: 12px;
+}
+#block-menu-menu-header-top-submenu a:hover,
+#secondary-menu a:hover {
+  text-decoration: underline;
+}
+#block-menu-menu-header-top-submenu,
+#block-menu-menu-header-top-submenu .inner,
+#secondary-menu .inner,
+#secondary-menu {
+  margin: 0;
+}
+#block-menu-menu-header-top-submenu .title {
+  display: none;
+}
+#block-menu-menu-header-top-submenu ul,
+#secondary-menu ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+#block-menu-menu-header-top-submenu ul li,
+#secondary-menu ul li {
+  list-style-type: none;
+  list-style-image: none;
+  display: block;
+  float: left;
+}
+#block-menu-menu-header-top-submenu ul li.last a,
+#secondary-menu ul li.last a {
+  border: 0;
+}
+#footer-message {
+  color: #000000;
+}
+#search label {
+  display: none;
+}
+#search-box-inner {
+  margin: 0;
+}
+#edit-search-theme-form-header {
+  width: 150px;
+}
+#search_header {
+  border: 0;
+  background: none;
+  color: #ffffff;
+  font-size: 14px;
+}
+body.node-type-page .panel-2col .field-image {
+  text-align: right;
+}
+body.node-type-page .panel-2col .field-image .field-label {
+  display: none;;
+}
+.front .panel-2col-stacked h2.pane-title {
+  padding: 8px 0;
+  overflow: hidden;
+}
+.front .block-panels_mini h2.pane-title {
+  background: none;
+}
+.front .block-panels_mini h2.title {
+  display: none;
+}
+.front .panel-2col-stacked h2 .block-title-inner {
+  display: inline-block;
+  float: left;
+}
+#rss-twitter-wrapper {
+  display: inline-block;
+  float: right;
+  margin: 0;
+}
+#rss-twitter-wrapper a.rss-icon {
+  margin: 0 15px 0 0;
+}
+.front #content-inner-inner {
+  margin: 0;
+}
+.front .panel-display .center-wrapper {
+  margin: 20px 15px 0;
+  overflow: hidden;
+}
+.front .panel-col-first,
+.front .panel-col-last {
+  width: 48%;
+}
+.front .panel-col-first {
+  margin-right: 30px;
+}
+.front .panel-col-first .inside {
+  margin-left: 20px;
+}
+.front .panel-col-last .inside {
+  margin-right: 20px;
+}
+.front #mini-panel-postscript_menus ul.menu {
+  padding: 0;
+  margin: 0 0 0 2em;
+  list-style: none;
+}
+.front .view-latest-spotlight .title a,
+.front .view-news .title a {
+  text-decoration: none;
+}
+.front .view-latest-spotlight .title a:hover,
+.front .view-news .title a:hover {
+  text-decoration: underline;
+  color: #1b1bff;
+}
+.front .view-news .nd-sidebar-left .nd-region-middle {
+  margin-left: 29%;
+}
+#header-group-inner {
+  position: relative;
+}
+#header-right-menus {
+  position: absolute;
+  top: 60px;
+  left: 630px;
+}
+.front .panel-display .center-wrapper .panel-col-first,
+.front .panel-display .center-wrapper .panel-col-last {
+  width: 45%;
+}
+
+.front .panel-display .center-wrapper .panel-col-last {
+  float: right;
+}
+
+.view-partner-logos .view-content {
+  margin: 0;
+  width: 800px;
+  padding: 2px 0;
+  overflow: hidden;
+  height: 42px;
+}
+
+.view-partner-logos .item-list ul li {
+  float: left;
+  width: 150px;
+  height: 42px;
+  list-style: none !important;
+  display: table;
+}
+
+.view-partner-logos .item-list ul li .views-field-field-slider-image-fid img {
+  margin: 0 auto; 
+}
+
+.view-partner-logos .item-list ul li .views-field-field-slider-image-fid {
+  display: table-cell;
+  vertical-align: middle;
+  position: static;
+  top: 50%;
+}
+
+.view-partner-logos .item-list ul li .views-field-field-slider-image-fid span {
+  position: relative;
+  top: -50%;
+}
+
+/* Container DIV - automatically generated */
+.simply-scroll-container { 
+  position: relative;
+}
+
+/* Clip DIV - automatically generated */
+.simply-scroll-clip { 
+  position: relative;
+  overflow: hidden;
+  z-index: 2;
+}
+
+/* UL/OL/DIV - the element that simplyScroll is inited on
+Class name automatically added to element */
+.simply-scroll-list { 
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.simply-scroll-list li {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.simply-scroll-list li img {
+  border: none;
+  display: block;
+}
+
+/* Custom class modifications - adds to / overrides above
+
+.simply-scroll is default base class */
+
+/* Container DIV */
+.simply-scroll { 
+  width: 800px;
+  height: 38px;
+  margin-bottom: 1em;
+}
+
+/* Clip DIV */
+.simply-scroll .simply-scroll-clip {
+  width: 800px;
+  height: 38px;
+}
+
+/* Explicitly set height/width of each list item */ 
+.simply-scroll .simply-scroll-list li {
+  float: left; /* Horizontal scroll only */
+  width: 150px;
+  height: 38px;
+}
+
+#block-panels_mini-postscript_menus {
+  margin-bottom: 0;
+}
+
+#block-panels_mini-postscript_menus .inner {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+#block-panels_mini-postscript_menus .inner .panels-flexible-row-first {
+  background: #466AA1;
+  padding: 0;
+  margin-bottom: 0.5em;
+  border-bottom: 1px solid white;
+}
+.panels-flexible-region-5-part_logos_left_text-inside p {
+  margin: 0;
+  font-size: 12px;
+  font-style: italic;
+  color: #ffffff;
+  padding: 10px 25px 10px 20px;
+  line-height: 12px;
+  text-transform: lowercase;
+}
+#block-panels_mini-postscript_menus .inner .panels-flexible-row-last .inside {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+#block-panels_mini-postscript_menus .inner .panels-flexible-row-first a img {
+  vertical-align: bottom;
+}
+
+.pane-content-field .field-about-mdhs-image .field-label {
+  display: none;
+}
+
+.front #content-group-inner {
+  margin-right: 0;
+}
+#content-group-inner {
+  margin-right: 20px;
+}
+.view-how-to-give .views-row {
+  margin-bottom: 20px;
+  border-bottom: 1px solid #cccccc;
+  padding-bottom: 15px;
+}
+.view-giving-why-give-categories {
+  margin: 0 0 20px 0;
+}
+.view-giving-why-give-categories ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.view-giving-why-give-categories ul li {
+  display: inline-block;
+  margin: 0 15px 0 0;
+}
+.view-giving-why-give-categories ul li .views-field-name-1 span {
+  font-weight: bold;
+}
+#site-home {
+  display: inline-block;
+  width: 98px;
+  height: 99px;
+}
+#site-home.a:visited,
+#site-home.a {
+  color: #fff;
+}
+.node-type-donation .product-info,
+.node-type-donation #product-additional {
+  display: none;
+}
+.view-front-slideshow {
+  width: 960px;
+  overflow: hidden;
+}
+.view-front-slideshow .views_slideshow_main {
+  width: 796px;
+  float: left;
+}
+.view-front-slideshow .views-slideshow-controls-bottom {
+  float: left;
+  width: 164px;
+}
+.view-front-slideshow .views-slideshow-controls-bottom .views_slideshow_thumbnailhover_breakout_teasers {
+  padding-left: 2px;
+}
+.view-front-slideshow .views-slideshow-controls-bottom .views_slideshow_thumbnailhover_breakout_teasers .views-row-odd,
+.view-front-slideshow .views-slideshow-controls-bottom .views_slideshow_thumbnailhover_breakout_teasers .views-row-even {
+  background: transparent url('../images/slider-pager-bg.png') no-repeat;
+  height: 53px;
+  line-height: 53px;
+  white-space: nowrap;
+  margin-bottom: 1px;
+}
+.view-front-slideshow .views-slideshow-controls-bottom .views_slideshow_thumbnailhover_breakout_teasers .views_slideshow_thumbnailhover_div_breakout_teaser:last-child,
+.view-front-slideshow .views-slideshow-controls-bottom .views_slideshow_thumbnailhover_breakout_teasers #views_slideshow_thumbnailhover_div_breakout_teaser_front_slideshow-block_1_4 {
+  height: 54px;
+  line-height: 54px;
+  margin-bottom: 0;
+}
+.view-front-slideshow .views-slideshow-controls-bottom .views_slideshow_thumbnailhover_breakout_teasers .views-row-odd .views-field-title,
+.view-front-slideshow .views-slideshow-controls-bottom .views_slideshow_thumbnailhover_breakout_teasers .views-row-even .views-field-title {
+  padding-left: 10px;
+  vartical-align: middle;
+  color: #5f5fd3;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-family: Helvetica Neue, Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+
+.view-front-slideshow .views-slideshow-controls-bottom .views_slideshow_thumbnailhover_breakout_teasers .activeSlide {
+  background-image: url('../images/slider-pager-bg-hover.png') !important;
+}
+.view-front-slideshow .views-slideshow-controls-bottom .views_slideshow_thumbnailhover_breakout_teasers .activeSlide .views-field-title {
+  color: #fff !important;
+}
+
+#header-right-menus #block-menu-menu-header-top-submenu {
+  font-weight: bold;
+  padding: 2px 0;
+}
+#header-right-menus #secondary-menu {
+  border-top: 1px solid white;
+  padding: 6px 0px;
+}
+
+span.mailto {
+  background: url("../images/mailto.png") no-repeat scroll right center transparent !important;
+}
+
+span.ext {
+  background: url("../images/extlink.png") no-repeat scroll right center transparent !important;
+}
+
+/*views-news*/
+.view-latest-spotlight .nd-region-middle-wrapper .teaser p,
+.view-news .nd-region-middle-wrapper .teaser p {
+  margin: 0 0 1em;
+}
+
+#view-id-news-page_1 .view-content .views-row {
+  margin-bottom: 24px;
+}
+
+#view-id-news-page_1 .view-content .views-row .nd-region-left {
+  width: 120px;
+}
+
+#view-id-news-page_1 .view-content .views-row .nd-sidebar-left .nd-region-middle {
+  margin-left: 120px;
+}
+
+#view-id-news-page_1 .view-content h3 {
+  color: #567;
+}
+
+#view-id-news-page_1 .view-content .field.title {
+  margin-bottom: 10px;
+}
+
+#view-id-news-page_1 .view-content .field.title a {
+  font-size: 14px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #333;
+}
+
+#view-id-news-page_1 .view-content .field.title a:hover {
+  text-decoration: underline;
+}
+
+#view-id-events-page_1 .view-content .views-row,
+#view-id-events-page_2 .view-content .views-row,
+#view-id-events-page_3 .view-content .views-row {
+  margin-bottom: 24px;
+  overflow: hidden;
+  width: 100%;
+}
+
+#view-id-events-page_1 .view-content .views-row .nd-region-left,
+#view-id-events-page_2 .view-content .views-row .nd-region-left,
+#view-id-events-page_3 .view-content .views-row .nd-region-left {
+  width: 120px;
+}
+
+#view-id-events-page_1 .view-content .views-row .nd-sidebar-left .nd-region-middle,
+#view-id-events-page_2 .view-content .views-row .nd-sidebar-left .nd-region-middle,
+#view-id-events-page_3 .view-content .views-row .nd-sidebar-left .nd-region-middle,
+#view-id-latest_spotlight-page_1 .view-content .views-row .nd-sidebar-left .nd-region-middle {
+  margin-left: 120px;
+}
+
+#view-id-events-page_1 .view-content h3,
+#view-id-events-page_2 .view-content h3,
+#view-id-events-page_3 .view-content h3 {
+  color: #567;
+}
+
+#view-id-events-page_1 .view-content .field.title,
+#view-id-events-page_2 .view-content .field.title,
+#view-id-events-page_3 .view-content .field.title {
+  margin-bottom: 10px;
+}
+
+#view-id-events-page_1 .view-content .field.title a,
+#view-id-events-page_2 .view-content .field.title a,
+#view-id-events-page_3 .view-content .field.title a {
+  font-size: 14px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #333;
+}
+
+#view-id-events-page_1 .view-content .field.title a:hover,
+#view-id-events-page_2 .view-content .field.title a:hover,
+#view-id-events-page_3 .view-content .field.title a:hover {
+  text-decoration: underline;
+}
+
+.field-about-mdhs-image {
+  text-align: right;
+}
+.pane-left,
+.pane-right {
+  width: 50%;
+}
+.pane-right div {
+  text-align: right;
+}
+.field-profile-description {
+  font-style: italic;
+  font-size: 16px;
+  margin-bottom: 30px;
+}
+
+.view-staff,
+.view-students,
+.view-alumni {
+  margin-left: 20px;
+}
+.view-staff td,
+.view-students td,
+.view-alumni td {
+  padding: 0 0 80px 0;
+  height: 200px;
+}
+.view-staff td .views-field-field-profile-image-fid,
+.view-students td .views-field-field-profile-image-fid,
+.view-alumni td .views-field-field-profile-image-fid {
+  text-align: center;
+}
+.view-staff td .views-field-nothing,
+.view-students td .views-field-nothing,
+.view-alumni td .views-field-nothing {
+  position: relative;
+}
+.view-staff td .views-field-field-profile-image-fid .field-content,
+.view-students td .views-field-field-profile-image-fid .field-content,
+.view-alumni td .views-field-field-profile-image-fid .field-content {
+  display: block;
+  height: 200px;
+}
+.view-staff td .views-field-nothing .field-content,
+.view-students td .views-field-nothing .field-content,
+.view-alumni td .views-field-nothing .field-content {
+  width: 180px;
+  background: #003366;
+  color: #ffffff;
+  padding: 5px 10px;
+  opacity: 0.75;
+  filter:alpha(opacity=75);
+  height: 35px;
+  display: block;
+  margin: -45px auto 0 auto;
+}
+.node-type-event .field-body {
+  margin-top: 35px;
+}
+.pane-right div,
+.pane-field-about-mdhs-image div {
+  line-height: 0;
+}
+.pane-right .custom-image-caption,
+.pane-field-image-caption {
+  float: right;
+}
+.pane-right .custom-image-caption-inner,
+.pane-field-image-caption .content {
+  opacity: 0.75;
+  filter:alpha(opacity=75);
+  background: #003366;
+}
+.pane-right .custom-image-caption-inner-inner,
+.pane-field-image-caption .field-image-caption {
+  padding: 10px;
+  font-size: 14px;
+  color: #ffffff;
+  text-align: left;
+  line-height: 150%;
+}
+.view-events .views-row {
+  overflow: hidden;
+}
+#more-events {
+  float: right;
+  margin: 10px 0 0 0;
+}
+.page-past-events .field-speaker div,
+.page-past-events .field-event-date-only div {
+    display: none;
+}
+.front .view-events .views-row {
+    margin-bottom: 1em;
+}
+.front .more-link {
+  text-align: left;
+}
+.view-display-id-attachment_1,
+.view-display-id-attachment_2 {
+  margin: 0 0 20px 0;
+}
+.view-display-id-attachment_1 .views-summary,
+.view-display-id-attachment_2 .views-summary {
+  display: inline-block;
+  padding: 0 3px;
+}
+#views_slideshow_singleframe_pager_front_slideshow-block_1 {
+  margin: 0 50px 0 0;
+  overflow: hidden;
+}
+#views_slideshow_singleframe_pager_front_slideshow-block_1 div {
+  padding: 0;
+}
+.view-giving td {
+  width: 33%;
+  text-align: center;
+  padding: 0;
+}
+.view-giving td .views-field-nothing {
+  position: relative;
+}
+.view-giving td .views-field-nothing .field-content {
+  background: #003366;
+  height: 35px;
+  margin: -50px auto 0 auto;
+  opacity: 0.75;
+  padding: 5px 10px;
+  width: 180px;
+  display: block;
+  color: #ffffff;
+  text-align: left;
+}
